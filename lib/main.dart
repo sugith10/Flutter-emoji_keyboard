@@ -7,7 +7,6 @@ void main() {
   runApp(const MyApp());
 }
 
-/// Example for EmojiPickerFlutter
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -106,7 +105,6 @@ class MyAppState extends State<MyApp> {
                     onBackspacePressed: _onBackspacePressed,
                     config: Config(
                       columns: 8,
-                      // Issue: https://github.com/flutter/flutter/issues/28894
                       emojiSizeMax: 32 *
                           (foundation.defaultTargetPlatform ==
                                   TargetPlatform.iOS
